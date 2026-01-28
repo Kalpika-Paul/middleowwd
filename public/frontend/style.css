@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative; 
+    
+}
+
+body::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-wrapper{
+    width: 400px;
+    padding: 30px;
+    border:1px solid rgb(95, 95, 96);
+    backdrop-filter: blur(8px);
+    background-color:rgba(255, 255, 255, 0.1) ;
+    text-align: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    position: relative;
+    margin: 15px 0;
+    border-bottom: 2px solid aliceblue;
+}
+
+.input-field input{
+    width: 100%;
+    height: 40px;
+    background:transparent;
+    border: none;
+    outline: none;
+
+}
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: transform 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+    transform: translateY(-120%);
+    font-size: 15px;
+    top: 10px;
+}
+
+.password-options{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 25px 0 15px 0;
+color: aliceblue;
+}
+
+.password-options label{
+    display: flex;
+    align-items: center;
+
+}
+
+#remember{
+    accent-color: blue;
+}
+.password-options p{
+    margin-left: 7px;
+}
+
+.login-wrapper a{
+    text-decoration: none;
+     color: aliceblue;
+
+}
+.login-wrapper a:hover{
+  
+     color: rgb(112, 209, 77);
+
+}
+
+button {
+    padding: 12px;
+    background-color: rgb(5, 100, 5);
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+
+}
+
+button:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+
+
