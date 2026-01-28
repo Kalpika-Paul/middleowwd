@@ -17,6 +17,8 @@
 
 <body>
 <div class="login-page">
+
+
     <div class="container">
         <div class="login-wrapper">
             <form action="{{ route('admin.auth') }}" method="POST" >
