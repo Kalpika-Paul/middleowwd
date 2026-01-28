@@ -26,13 +26,12 @@ body::before {
     background-position: center;
     z-index: -1; 
 }
-
-.container{
+.login-page .container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
+    }
 
 .login-wrapper{
     width: 400px;
@@ -113,13 +112,9 @@ color: aliceblue;
 
 }
 
-button {
+.login-page button {
     padding: 12px;
     background-color: rgb(5, 100, 5);
-    border: none;
-    color: white;
-    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
-
 }
 
 button:hover {
