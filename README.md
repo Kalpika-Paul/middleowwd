@@ -64,3 +64,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
+For npm install
+
+write command : npm install bootstrap @popperjs/core
+
+@import "bootstrap/scss/bootstrap";   write this to  resources/scss/app.scss
+
+npm install sass  also install this for scss
+
+Now add this to the blade @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+always run npm run dev while starting the site.
+

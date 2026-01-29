@@ -11,4 +11,8 @@ class Product extends Model
 
     protected $guarded = [];
 
+    protected $casts = [
+        'image' =>'array',
+    ];
+
 }
