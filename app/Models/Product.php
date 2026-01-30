@@ -12,7 +12,14 @@ class Product extends Model
     protected $guarded = [];
 
     protected $casts = [
-        'image' =>'array',
+        'images' => 'array', 
     ];
 
+    public function getImagesAttribute($value)
+    {
+        $decoded = json_decode($value, true);
+        return is_array($decoded) ? $decoded : [];
+    }
 }
+
+

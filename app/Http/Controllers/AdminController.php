@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -10,7 +11,9 @@ class AdminController extends Controller
     public function dashboard()
     {
 
-        return view('dashboard');
+        $products = Product::all();
+
+        return view('dashboard', compact('products'));
     }
 
     public function auth(Request $request)

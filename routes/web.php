@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,7 +33,11 @@ Route::post('/auth', [AdminController::class, 'auth'])->middleware('throttle:5,1
 
 Route::post('/logout', [AdminController::class, 'logout'])->middleware('auth')->name('admin.logout');
 
+Route::post('/product-store', [ProductController::class, 'store'])->middleware('auth')->name('admin.store');
+
 });
+
+
 
 
 
